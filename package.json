@@ -1,0 +1,30 @@
+{
+  "name": "commitlint-config-emoji-convention",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "commit",
+    "commitlint",
+    "commitlint-config",
+    "conventional-commits",
+    "git-emoji"
+  ],
+  "author": "João Vitor <jvitordiass@outlook.com>",
+  "license": "MIT",
+  "description": "Shareable commitlint configuration that enforces conventional commits and adds emoji support",
+  "homepage": "https://github.com/diasjoaovitor/commitlint-config-emoji-convention#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diasjoaovitor/commitlint-config-emoji-convention.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diasjoaovitor/commitlint-config-emoji-convention/issues"
+  }
+}
