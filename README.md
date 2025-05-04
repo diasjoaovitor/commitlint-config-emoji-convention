@@ -12,7 +12,7 @@ Use with [commitlint](https://www.npmjs.com/package/@commitlint/cli).
 ```sh
 npm install --save-dev @commitlint/cli commitlint-config-emoji-convention
 
-echo "module.exports = { extends: ['emoji-convention'] }" > .commitlintrc.js
+echo "export default { extends: ['emoji-convention'] }" > commitlint.config.js
 ```
 
 The official [commitlint documentation](https://commitlint.js.org/guides/local-setup.html) recommends using [Husky](https://typicode.github.io/husky/) to validate commit messages.
@@ -28,9 +28,11 @@ The above configuration will validate commit messages, but requires manual emoji
 
 ```sh
 touch .husky/prepare-commit-msg
+```
 
-# Add the following script:
+Add the following script:
 
+```sh
 msg=$(cat "$1")
 
 msg=$(echo $msg | sed -e "s/^init/🎉 init/")
